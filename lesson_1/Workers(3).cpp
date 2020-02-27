@@ -42,5 +42,6 @@ int main()
         minPay=worker3;
     }
     cout<<"difference "<<maxPay-minPay;
+    
 }
 
