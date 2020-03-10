@@ -5,6 +5,7 @@ using namespace std;
 int main()
 {
     int cards[10];
+    int allMoney=0;
     int card=0;
     int money=0;
     for(int cleaner=0;cleaner<10;cleaner++)
@@ -29,7 +30,9 @@ int main()
         for(int counter=0;counter<10;counter++)
         {
             cout<<cards[counter]<<" ";
+            allMoney+=cards[counter];
         }
+        cout<<endl<<"all sum in these cards is "<<allMoney;
         cout<<endl;
     }
 }
