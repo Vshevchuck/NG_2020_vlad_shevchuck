@@ -19,7 +19,7 @@ int main()
         cin>>card;
         if(card > 9 || card < 0)
         {
-            cout<<"this card are not registered"<<endl;
+            cout<<"this card is not registered"<<endl;
         }
         else
         {
@@ -27,6 +27,7 @@ int main()
             cin>>money;
             cards[card-1]=money;
         }
+        allMoney=0;
         for(int counter=0;counter<10;counter++)
         {
             cout<<cards[counter]<<" ";
