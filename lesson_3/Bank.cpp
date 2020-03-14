@@ -25,7 +25,7 @@ int main()
         {
             cout<<"how much you wnat to put on card?"<<endl;
             cin>>money;
-            cards[card-1]=money;
+            cards[card-1]+=money;
         }
         allMoney=0;
         for(int counter=0;counter<10;counter++)
