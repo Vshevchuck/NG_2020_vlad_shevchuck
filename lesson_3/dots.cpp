@@ -38,8 +38,8 @@ int main()
                 stopPaint=1;
             }
         }
-        check=0;
         cout<<endl;
+        check=0;
     }
 
 }
