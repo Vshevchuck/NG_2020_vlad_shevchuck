@@ -15,9 +15,11 @@ int main()
     cin.getline(arr,100);
     if(arr[index] != 0)
     {
+
         while(arr[index] != 0)
         {
-            if(arr[index] == ' ' || arr[index] ==',' || arr[index] == '.' || arr[index] == '!' || arr[index] == '!' || arr[index] == ':')
+
+            if((arr[index] <'A' || (arr[index] >'Z' && arr[index]<'a') || (arr[index]>'z')))
             {
                 counter++;
             }
@@ -28,7 +30,5 @@ int main()
     else{
         cout<<"your string has not words"<<endl;
     }
-
-
 
 }
