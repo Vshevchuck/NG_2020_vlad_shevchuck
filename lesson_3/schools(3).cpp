@@ -20,7 +20,7 @@ int main()
             cout<<"i know this school!";
             counter=10;
         }
-        else
+        if(counter == 9)
         {
             cout<<"i dont know this school";
             counter=10;
