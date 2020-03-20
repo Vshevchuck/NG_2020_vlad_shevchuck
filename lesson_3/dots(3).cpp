@@ -6,6 +6,7 @@ int main()
 {
     int arr[20];
     int maxS=0;
+    int index=0;
     int currentStars=0;
     for(int cleaner=0;cleaner<20;cleaner++)
     {
@@ -29,24 +30,20 @@ int main()
             counter--;
         }
     }
-    for(int counter=0;counter<20;counter++)
+    while(arr[index] != 0)
     {
-        currentStars=arr[counter];
+        currentStars=arr[index];
         while(currentStars<=maxS)
         {
             cout<<" ";
             currentStars+=2;
         }
-        if(arr[counter]==0)
-        {
-            break;
-        }
-        while(arr[counter]>0)
+        while(arr[index]>0)
         {
             cout<<"*";
-            arr[counter]--;
+            arr[index]--;
         }
         cout<<endl;
-
+        index++;
     }
 }
