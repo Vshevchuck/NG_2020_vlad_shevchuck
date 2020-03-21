@@ -19,9 +19,13 @@ int main()
         while(arr[index] != 0)
         {
 
-            if((arr[index] <'A' || (arr[index] >'Z' && arr[index]<'a') || (arr[index]>'z')))
+            if((arr[index]>='a' && arr[index]<='z') || (arr[index]>='A' && arr[index]<='Z'))
             {
-                counter++;
+                if((arr[index+1] <'A' || (arr[index+1] >'Z' && arr[index+1]<'a') || (arr[index+1]>'z')))
+                {
+                     counter++;
+                }
+
             }
             index++;
         }
