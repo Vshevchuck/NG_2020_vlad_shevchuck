@@ -5,9 +5,9 @@ using namespace std;
 int main()
 {
     int dots[5];
-    int secondDots[5];
-    int check=0;
     int stopPaint=0;
+    int step=0;
+    int endArr=0;
 
     for(int counter=0;counter<5;counter++)
     {
@@ -16,32 +16,30 @@ int main()
     }
     for(int counter=0;counter<5;counter++)
     {
-       secondDots[counter]=dots[counter];
+       dots[counter]=dots[counter];
     }
     while(stopPaint == 0)
     {
 
         for(int counter=0;counter<5;counter++)
         {
-            if(secondDots[counter]>0)
+            if(dots[counter]-step>0)
             {
                 cout<<"*";
-                secondDots[counter]--;
             }
             else{
                 cout<<" ";
+                endArr++;
             }
 
-            if(secondDots[counter]==0)
-            {
-               check++;
-            }
-            if(check==5)
+            if(endArr==5)
             {
                 stopPaint=1;
             }
+
         }
-        check=0;
+        step++;
+        endArr=0;
         cout<<endl;
     }
 
