@@ -6,6 +6,7 @@ int main()
 {
     int schoolList [10];
     int yourSchool=0;
+    int foundSchool=0;
     for(int counter=0;counter<10;counter++)
     {
         cout<<"please,enter school number"<<endl;
@@ -18,12 +19,12 @@ int main()
         if(yourSchool==schoolList[counter])
         {
             cout<<"i know this school!";
-            counter=10;
+            foundSchool=1;
         }
-        if(counter==9)
-        {
-            cout<<"i dont know this school";
-        }
+    }
+    if(foundSchool==0)
+    {
+        cout<<"i dont know this school!";
     }
 
 }
