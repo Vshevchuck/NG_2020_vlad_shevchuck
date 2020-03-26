@@ -13,7 +13,7 @@ int main()
     cin.getline(arr,100);
     while(arr[index]!=0)
     {
-        if((arr[index]>='a' && arr[index]<='z') || (arr[index]>='A' && arr[index]<='Z'))
+        if((arr[index]>='a' && arr[index]<='z'))
         {
             arr[index]-=32;
         }
