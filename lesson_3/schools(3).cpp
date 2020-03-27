@@ -20,6 +20,7 @@ int main()
         {
             cout<<"i know this school!";
             foundSchool=1;
+            counter=10;
         }
     }
     if(foundSchool==0)
