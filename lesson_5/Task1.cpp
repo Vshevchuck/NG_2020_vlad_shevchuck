@@ -7,7 +7,6 @@ using namespace std;
         {
             arr[index]*=mult;
         }
-        return arr;
 }
 int main()
 {
