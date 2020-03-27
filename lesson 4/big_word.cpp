@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    char arr[100];
+    char arr[30];
     int index=0;
     int counter=0;
     int stop=0;
@@ -13,12 +13,12 @@ int main()
     int second=0;
     int first=0;
     int maxString=0;
-    for(int cleaner=0;cleaner<100;cleaner++)
+    for(int cleaner=0;cleaner<30;cleaner++)
     {
         arr[cleaner]=0;
     }
     cout<<"enter your string"<<endl;
-    cin.getline(arr,100);
+    cin.getline(arr,30);
     if(arr[index] != 0)
     {
 
