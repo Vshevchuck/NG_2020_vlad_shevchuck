@@ -7,7 +7,6 @@ int main()
     int dots[5];
     int stopPaint=0;
     int step=0;
-    int endArr=0;
 
     for(int counter=0;counter<5;counter++)
     {
@@ -18,28 +17,22 @@ int main()
     {
        dots[counter]=dots[counter];
     }
-    while(stopPaint == 0)
+    while(stopPaint<5)
     {
-
+        stopPaint=0;
         for(int counter=0;counter<5;counter++)
         {
-            if(dots[counter]-step>0)
+            if(dots[counter]>step)
             {
                 cout<<"*";
             }
             else{
                 cout<<" ";
-                endArr++;
-            }
-
-            if(endArr==5)
-            {
-                stopPaint=1;
+                stopPaint++;
             }
 
         }
         step++;
-        endArr=0;
         cout<<endl;
     }
 
