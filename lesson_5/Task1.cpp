@@ -1,12 +1,12 @@
 #include <iostream>
 
 using namespace std;
- int* multpl(int arr [],int mult)
+void multpl(int arr [],int mult)
 {
-        for(int index=0;index<5;index++)
-        {
-            arr[index]*=mult;
-        }
+    for(int index=0;index<5;index++)
+    {
+        arr[index]*=mult;
+    }
 }
 int main()
 {
@@ -24,6 +24,5 @@ int main()
     {
         cout<<arr[index]<<" ";
     }
-
 
 }
