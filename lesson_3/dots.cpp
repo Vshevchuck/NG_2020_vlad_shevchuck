@@ -13,10 +13,6 @@ int main()
         cout<<"how much dots you need?"<<endl;
         cin>>dots[counter];
     }
-    for(int counter=0;counter<5;counter++)
-    {
-       dots[counter]=dots[counter];
-    }
     while(stopPaint<5)
     {
         stopPaint=0;
