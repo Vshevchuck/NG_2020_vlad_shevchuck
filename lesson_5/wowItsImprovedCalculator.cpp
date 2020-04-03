@@ -1,27 +1,46 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
-int EnterNumberOne(){
-    int numberOne;
-    cout<<"Enter number one - ";
-    cin>>numberOne;
-    return numberOne;
-}
-int EnterNumberTwo(){
-    int numberTwo;
-    cout<<"Enter number two - ";
-    cin>>numberTwo;
-    return numberTwo;
+
+
+int getNumbers(){
+  int number;
+  cout << "Enter number-";
+  cin >> number;
+  return number;
 }
 void add(int numberOne,int numberTwo)
 {
-  cout<<numberOne+numberTwo;
+    cout<<numberOne+numberTwo;
+}
+void difference(int numberOne,int numberTwo)
+{
+    cout<<numberOne-numberTwo;
+}
+void mult(int numberOne,int numberTwo)
+{
+    cout<<numberOne*numberTwo;
+}
+void division(int numberOne,int numberTwo)
+{
+    cout<<numberOne/numberTwo;
+}
+void root(int numberOne,int numberTwo)
+{
+    cout<<sqrt(numberOne)<<","<<sqrt(numberOne);
+}
+void power(int numberOne, int numberTwo){
+  int degree;
+  cout << "Enter degree: ";
+  cin >> degree;
+  cout<<pow(numberOne,degree)<<","<<pow(numberTwo,degree)<< endl;
 }
 int main()
 {
     int act=0;
-    int numberOne=EnterNumberOne();
-    int numberTwo=EnterNumberTwo();
+    int numberOne=getNumbers();
+    int numberTwo=getNumbers();
     cout<<"Enter act:"<<endl;
     cout<<"sum - 1"<<endl;
     cout<<"difference - 2"<<endl;
@@ -32,24 +51,30 @@ int main()
     cin>>act;
     if(act <=0 || act >7)
     {
-        cout<<"error";
+            cout<<"error";
     }
     else
     {
         switch (act)
         {
         case 1:
-               cout<<add(numberOne,numberTwo);
+            add(numberOne,numberTwo);
+            break;
         case 2:
-               cout<<add(numberOne,numberTwo);
+            difference(numberOne,numberTwo);
+            break;
         case 3:
-               cout<<add(numberOne,numberTwo);
+            mult(numberOne,numberTwo);
+            break;
         case 4:
-               cout<<add(numberOne,numberTwo);
+            division(numberOne,numberTwo);
+            break;
         case 5:
-               cout<<add(numberOne,numberTwo);
+            root(numberOne,numberTwo);
+            break;
         case 6:
-               cout<<add(numberOne,numberTwo);
+            power(numberOne,numberTwo);
         }
     }
+
 }
