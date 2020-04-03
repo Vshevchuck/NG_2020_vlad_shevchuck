@@ -3,12 +3,11 @@
 
 using namespace std;
 
-
 int getNumbers(){
-  int number;
-  cout << "Enter number-";
-  cin >> number;
-  return number;
+    int number;
+    cout << "Enter number-";
+    cin >> number;
+    return number;
 }
 void add(int numberOne,int numberTwo)
 {
@@ -31,10 +30,10 @@ void root(int numberOne,int numberTwo)
     cout<<sqrt(numberOne)<<","<<sqrt(numberOne);
 }
 void power(int numberOne, int numberTwo){
-  int degree;
-  cout << "Enter degree: ";
-  cin >> degree;
-  cout<<pow(numberOne,degree)<<","<<pow(numberTwo,degree)<< endl;
+    int degree;
+    cout << "Enter degree: ";
+    cin >> degree;
+    cout<<pow(numberOne,degree)<<","<<pow(numberTwo,degree)<< endl;
 }
 int main()
 {
