@@ -9,31 +9,35 @@ int getNumbers(){
     cin >> number;
     return number;
 }
-void add(int numberOne,int numberTwo)
+int add(int numberOne,int numberTwo)
 {
-    cout<<numberOne+numberTwo;
+    int add=numberOne+numberTwo;
+    return add;
 }
-void difference(int numberOne,int numberTwo)
+int difference(int numberOne,int numberTwo)
 {
-    cout<<numberOne-numberTwo;
+    int diff = numberOne-numberTwo;
+    return diff;
 }
-void mult(int numberOne,int numberTwo)
+int mult(int numberOne,int numberTwo)
 {
-    cout<<numberOne*numberTwo;
+    int mult=numberOne*numberTwo;
+    return mult;
 }
-void division(int numberOne,int numberTwo)
+int division(int numberOne,int numberTwo)
 {
-    cout<<numberOne/numberTwo;
+    int div=numberOne/numberTwo;
+    return div;
 }
-void root(int numberOne,int numberTwo)
+int root(int number)
 {
-    cout<<sqrt(numberOne)<<","<<sqrt(numberOne);
+    return sqrt(number);
 }
-void power(int numberOne, int numberTwo){
+int power(int number){
     int degree;
     cout << "Enter degree: ";
     cin >> degree;
-    cout<<pow(numberOne,degree)<<","<<pow(numberTwo,degree)<< endl;
+    return pow(number,degree);
 }
 int main()
 {
@@ -57,22 +61,23 @@ int main()
         switch (act)
         {
         case 1:
-            add(numberOne,numberTwo);
+            cout<<add(numberOne,numberTwo);
             break;
         case 2:
-            difference(numberOne,numberTwo);
+            cout<<difference(numberOne,numberTwo);
             break;
         case 3:
-            mult(numberOne,numberTwo);
+            cout<<mult(numberOne,numberTwo);
             break;
         case 4:
-            division(numberOne,numberTwo);
+            cout<<division(numberOne,numberTwo);
             break;
         case 5:
-            root(numberOne,numberTwo);
+            cout<<root(numberOne)<<","<<root(numberTwo);
             break;
         case 6:
-            power(numberOne,numberTwo);
+            cout<<power(numberOne)<<endl;
+            cout<<power(numberTwo);
         }
     }
 
