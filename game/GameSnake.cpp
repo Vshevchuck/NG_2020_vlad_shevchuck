@@ -49,7 +49,8 @@ void display_callback(){
 
 
 void DrawGrid(){
-    int x, y;
+    int x;
+    int y;
     glClearColor(1, 1, 0.6, 255);
     glClear(GL_COLOR_BUFFER_BIT);
     glColor3ub(244, 244, 111);
